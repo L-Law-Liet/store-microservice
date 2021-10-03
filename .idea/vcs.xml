@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/eureka" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/store-cart-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/store-catalog-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/store-comment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/store-eureka" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/store-information-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/store-profile-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/store-rating-service" vcs="Git" />
+  </component>
+</project>
