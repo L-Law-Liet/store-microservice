@@ -1,9 +1,12 @@
 version: '3'
 services:
-  eureka:
-    image: edev.kz/microservice-docker-eureka:0.0.1-SNAPSHOT
-    ports:
-      - 8761:8761
+  cart:
+    image: edev.kz/microservice-docker-cart:0.0.1-SNAPSHOT
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://localhost:8761
+    depends_on:
+      - eureka
   catalog:
     image: edev.kz/microservice-docker-catalog:0.0.1-SNAPSHOT
     environment:
@@ -13,6 +16,31 @@ services:
       - eureka
   comment:
     image: edev.kz/microservice-docker-comment:0.0.1-SNAPSHOT
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://localhost:8761
+    depends_on:
+      - eureka
+  eureka:
+    image: edev.kz/microservice-docker-eureka:0.0.1-SNAPSHOT
+    ports:
+      - 8761:8761
+  information:
+    image: edev.kz/microservice-docker-information:0.0.1-SNAPSHOT
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://localhost:8761
+    depends_on:
+      - eureka
+  profile:
+    image: edev.kz/microservice-docker-profile:0.0.1-SNAPSHOT
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://localhost:8761
+    depends_on:
+      - eureka
+  rating:
+    image: edev.kz/microservice-docker-rating:0.0.1-SNAPSHOT
     environment:
       - JAVA_OPTS=
         -DEUREKA_SERVER=http://localhost:8761

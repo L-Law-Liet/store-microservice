@@ -1,0 +1,19 @@
+server:
+  port: 8084
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/store_cart?createDatabaseIfNotExist=true
+    username: postgres
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+  flyway:
+    enabled: false
+  application:
+    name: cart
+
+
