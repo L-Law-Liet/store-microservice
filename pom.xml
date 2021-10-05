@@ -9,6 +9,12 @@
     <name>parent-project</name>
     <modules>
         <module>eureka</module>
-        <module>store-catalog-service</module>
+        <module>cart</module>
+        <module>catalog</module>
+        <module>comment</module>
+        <module>eureka</module>
+        <module>information</module>
+        <module>profile</module>
+        <module>rating</module>
     </modules>
 </project>

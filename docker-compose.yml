@@ -4,8 +4,15 @@ services:
     image: edev.kz/microservice-docker-eureka:0.0.1-SNAPSHOT
     ports:
       - 8761:8761
-  store-catalog-service:
-    image: edev.kz/microservice-docker-store-catalog-service:0.0.1-SNAPSHOT
+  catalog:
+    image: edev.kz/microservice-docker-catalog:0.0.1-SNAPSHOT
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://localhost:8761
+    depends_on:
+      - eureka
+  comment:
+    image: edev.kz/microservice-docker-comment:0.0.1-SNAPSHOT
     environment:
       - JAVA_OPTS=
         -DEUREKA_SERVER=http://localhost:8761

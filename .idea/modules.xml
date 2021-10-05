@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/cart/cart.iml" filepath="$PROJECT_DIR$/cart/cart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/catalog/catalog.iml" filepath="$PROJECT_DIR$/catalog/catalog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comment/comment.iml" filepath="$PROJECT_DIR$/comment/comment.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
-      <module fileurl="file://$PROJECT_DIR$/store-catalog-service/store-catalog-service.iml" filepath="$PROJECT_DIR$/store-catalog-service/store-catalog-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/information/information.iml" filepath="$PROJECT_DIR$/information/information.iml" />
+      <module fileurl="file://$PROJECT_DIR$/profile/profile.iml" filepath="$PROJECT_DIR$/profile/profile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rating/rating.iml" filepath="$PROJECT_DIR$/rating/rating.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/store-server.iml" filepath="$PROJECT_DIR$/.idea/store-server.iml" />
     </modules>
   </component>
