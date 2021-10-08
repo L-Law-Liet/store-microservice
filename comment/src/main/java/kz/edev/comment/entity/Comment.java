@@ -20,17 +20,7 @@ public class Comment {
     @Column(name = "created_at")
     private Timestamp createdAt;
 
-    @Column(name = "user_id")
-    private Long userId;
+    private Long user_id;
 
-    @Column(name = "product_id")
-    private Long productId;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id", insertable = false, updatable = false)
-    private User user;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "product_id", insertable = false, updatable = false)
-    private Product product;
+    private Long product_id;
 }

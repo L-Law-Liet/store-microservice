@@ -12,10 +12,11 @@ import javax.persistence.*;
 @Entity
 @Table(name = "rating")
 public class Rating {
-
-
     @Id
-    private Long product_id;
+    private Long id;
+
+    @Column(name = "product_id")
+    private Long productId;
     private Double rating;
 
 
