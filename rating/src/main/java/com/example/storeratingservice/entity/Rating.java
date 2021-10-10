@@ -13,6 +13,7 @@ import javax.persistence.*;
 @Table(name = "rating")
 public class Rating {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private Long product_id;

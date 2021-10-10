@@ -8,19 +8,17 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "comments")
 @Setter
 @Getter
 @ToString
+@Table(name = "comments")
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String text;
-    @Column(name = "created_at")
-    private Timestamp createdAt;
+    private Timestamp created_at;
 
     private Long user_id;
-
     private Long product_id;
 }

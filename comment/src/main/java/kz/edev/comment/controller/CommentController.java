@@ -23,7 +23,7 @@ public class CommentController {
 
     @PostMapping("")
     public Comment create(@RequestBody Comment comment){
-        comment.setCreatedAt(new Timestamp(System.currentTimeMillis()));
+        comment.setCreated_at(new Timestamp(System.currentTimeMillis()));
         return commentService.create(comment);
     }
 

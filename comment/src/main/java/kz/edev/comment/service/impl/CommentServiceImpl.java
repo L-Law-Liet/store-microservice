@@ -22,9 +22,6 @@ public class CommentServiceImpl implements CommentService {
         userComments.setComments(comments);
         return userComments;
     }
-    public List<Comment> getByUserId(Long id){
-        return commentRepository.getByUser_id(id);
-    }
 
     public Comment create(Comment comment){
         return commentRepository.saveAndFlush(comment);

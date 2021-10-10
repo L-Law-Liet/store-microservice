@@ -10,7 +10,6 @@ import java.util.List;
 @Service
 public interface CommentService {
 
-    List<Comment> getByUserId(Long id);
     UserComments getUserComments(Long id);
     Comment create(Comment comment);
     void delete(Long id);

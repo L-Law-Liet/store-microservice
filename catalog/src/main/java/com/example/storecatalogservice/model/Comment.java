@@ -13,13 +13,12 @@ import java.sql.Timestamp;
 
 public class Comment {
 
-    @JsonIgnore
     private Long id;
 
     private String text;
 
 
-    private Timestamp createdAt;
+    private Timestamp created_at;
 
     private Long user_id;
     private Long product_id;
