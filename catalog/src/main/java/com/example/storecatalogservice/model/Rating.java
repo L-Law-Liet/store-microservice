@@ -8,9 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Rating {
-
+    private Long id;
     private Long product_id;
     private double rating;
-
-
 }

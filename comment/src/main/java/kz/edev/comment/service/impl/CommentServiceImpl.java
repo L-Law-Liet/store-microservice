@@ -23,7 +23,7 @@ public class CommentServiceImpl implements CommentService {
         return userComments;
     }
     public List<Comment> getByUserId(Long id){
-        return commentRepository.getByUserId(id);
+        return commentRepository.getByUser_id(id);
     }
 
     public Comment create(Comment comment){

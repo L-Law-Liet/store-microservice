@@ -9,7 +9,7 @@ import java.util.List;
 
 @Repository
 public interface CommentRepository extends JpaRepository<Comment, Long> {
-    List<Comment> getByUserId(Long id);
+    List<Comment> getByUser_id(Long id);
 
     @Query(value = "SELECT * FROM comment c WHERE c.user_id=?1", nativeQuery = true)
     List<Comment> findUserComments(Long id);
